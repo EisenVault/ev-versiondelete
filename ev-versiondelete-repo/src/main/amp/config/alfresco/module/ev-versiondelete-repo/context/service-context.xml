@@ -34,5 +34,14 @@
         <property name="nodeService" ref="NodeService" />
         <property name="nodeLocatorService" ref="nodeLocatorService" />
     </bean>
+    
+    <!-- Alfresco Repository Action identified by the Spring Bean ID -->
+	<bean id="send-as-email"
+		  class="org.alfresco.tutorial.repoaction.SendAsEmailActionExecuter"
+		  parent="action-executer">
+		<property name="serviceRegistry">
+			<ref bean="ServiceRegistry" />
+		</property>
+	</bean>
 
 </beans>

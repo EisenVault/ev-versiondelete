@@ -22,5 +22,9 @@
             </list>
         </property>
     </bean>
+    
+    <!-- An evaluator that will check if a content node has the cm:emailed aspect applied -->
+    <bean id="alfresco.tutorials.evaluator.isEmailed"
+          class="org.alfresco.tutorial.doclibaction.evaluator.CheckIfDocIsEmailedEvaluator" />
 
 </beans>
