@@ -43,5 +43,14 @@
 			<ref bean="ServiceRegistry" />
 		</property>
 	</bean>
+	
+	<!-- Alfresco Repository Action identified by the Spring Bean ID -->
+	<bean id="version-delete"
+		  class="com.eisenvault.repo.actions.DeleteVersionsAction"
+		  parent="action-executer">
+		<property name="serviceRegistry">
+			<ref bean="ServiceRegistry" />
+		</property>
+	</bean>
 
 </beans>
