@@ -36,7 +36,7 @@
                             <param name="destination">{node.nodeRef}</param>
                             <param name="successMessage">eisenvault.action.versionDelete.msg.success</param>
                             <param name="failureMessage">eisenvault.action.versionDelete.msg.failure</param>
-                            <!-- <evaluator negate="true">alfresco.tutorials.evaluator.isEmailed</evaluator> -->
+                            <evaluator>evaluator.doclib.action.DeleteVersionsActionEvaluator</evaluator>
                         </action>
 					</actions>	
                     <actionGroups>
@@ -61,7 +61,11 @@
                                 <show id="version"/>
                             </field-visibility>
                             <appearance>
-                                <field id="version" label-id="eisenvault.action.versionDelete.form.field.version"/>
+                                <field id="version" label-id="eisenvault.action.versionDelete.form.field.version">
+                                	<control template="/form-controls/version-dropdown.ftl" >
+                                		<!-- <control-param name="noderef">{nodeRef}</control-param> -->
+                                	</control>
+                                </field>
                             </appearance>
                         </form>
                     </forms>
@@ -71,7 +75,7 @@
                      DocLib actions defined above -->
                 <!-- <config evaluator="string-compare" condition="DocLibCustom">
                     <dependencies>
-                        <js src="components/documentlibrary/custom-doclib-actions.js" />
+                        <js src="components/documentlibrary/custom-get-version.js" />
                     </dependencies>
                 </config> -->
 			</configurations>

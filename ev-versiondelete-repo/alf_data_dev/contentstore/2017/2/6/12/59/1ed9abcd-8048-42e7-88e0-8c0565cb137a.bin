@@ -1,3 +1,0 @@
-var node = search.findNode("system://system/a2f11bee-0d75-4693-aafe-d06b44536d3a");
-node.properties["module:currentVersion"]="1.2.1502120927";
-node.save();
