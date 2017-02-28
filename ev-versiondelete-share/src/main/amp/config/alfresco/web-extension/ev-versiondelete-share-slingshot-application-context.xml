@@ -25,6 +25,6 @@
 	<bean id="alfresco.tutorials.evaluator.isEmailed"
 		class="org.alfresco.tutorial.doclibaction.evaluator.CheckIfDocIsEmailedEvaluator" />
 	<bean id="evaluator.doclib.action.DeleteVersionsActionEvaluator"
-		class="com.eisenvault.ev_versiondelete_share.evaluator.DeleteVersionsActionEvaluator" />
+		class="com.eisenvault.versiondelete.evaluator.DeleteVersionsActionEvaluator" />
 
 </beans>

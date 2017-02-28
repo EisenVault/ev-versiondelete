@@ -1,4 +1,4 @@
-package com.eisenvault.ev_versiondelete_share.evaluator;
+package com.eisenvault.versiondelete.evaluator;
 
 import javax.servlet.http.HttpSession;
 
