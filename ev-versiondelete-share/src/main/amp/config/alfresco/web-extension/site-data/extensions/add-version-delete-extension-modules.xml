@@ -27,6 +27,7 @@
                              data that should then be passed on to a repo action
                              invokation. -->
                         <action id="eisenvault.action.versionDelete"
+                        		icon="delete-version"
                                 type="javascript"
                                 label="eisenvault.action.versionDelete.label">
                             <param name="function">onActionFormDialog</param>

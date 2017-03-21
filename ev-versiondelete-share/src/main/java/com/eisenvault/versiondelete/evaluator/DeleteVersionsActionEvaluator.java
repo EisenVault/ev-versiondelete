@@ -92,6 +92,11 @@ public class DeleteVersionsActionEvaluator extends BaseEvaluator{
 				JSONObject membership = (JSONObject) getResponse(connector ,membershipUri);
 				System.out.println("Printing membership object " + membership);
 				
+				// Adding check for the pages like repository and Audit Trail that doesn't contain info abt the user membership
+				if(membership == null){
+					return false;
+				}
+				
 				String versionUri = "/api/version?nodeRef="+arg0.get("nodeRef");
 				JSONArray version = (JSONArray) getResponse(connector ,versionUri);
 				System.out.println("Printing version object " + version);
